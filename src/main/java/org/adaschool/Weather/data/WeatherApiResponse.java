@@ -4,6 +4,7 @@ public class WeatherApiResponse {
 
     private Main main;
 
+    // Getters y Setters
     public Main getMain() {
         return main;
     }
@@ -14,8 +15,9 @@ public class WeatherApiResponse {
 
     public static class Main {
         private double temperature;
-        private double humidity;
+        private int humidity;
 
+        // Getters y Setters
         public double getTemperature() {
             return temperature;
         }
@@ -24,11 +26,11 @@ public class WeatherApiResponse {
             this.temperature = temperature;
         }
 
-        public double getHumidity() {
+        public int getHumidity() {
             return humidity;
         }
 
-        public void setHumidity(double humidity) {
+        public void setHumidity(int humidity) {
             this.humidity = humidity;
         }
     }
